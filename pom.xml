@@ -15,6 +15,9 @@
         <module>service-A2</module>
         <module>client-ribbon</module>
         <module>client-feign</module>
+        <module>hystrix-client-ribbon</module>
+        <module>hystrix-client-feign</module>
+        <module>hystrix-dashboard</module>
 
     </modules>
 

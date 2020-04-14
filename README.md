@@ -75,7 +75,19 @@ packing默认是jar类型
 - 服务容错保护
 
 ```
+1. 断路器安装在消费者上，分feign-client 和 ribbon-client
+2. 项目启动，将服务提供者关掉，就会走 熔断机制
+3. 访问：ribbon  http://127.0.0.1:8886/feign/name
+        feign   http://127.0.0.1:8885/feign/name
+4. 然后再把服务提供者启动 调用
 
+```
+- dashboard
+
+```
+1. 访问http://localhost:8880/hystrix 可以查看Dashboard
+2. 在上面的输入框填入: http://想监控的服务:端口/hystrix.stream进行测试
+注意：首先要先调用一下想监控的服务的API，否则将会显示一个空的图表
 
 ```
 
@@ -84,9 +96,7 @@ packing默认是jar类型
 - api网关服务 过滤:安全、监控、限流、路由
 
 ```
-1. 新建选择 spring Initializr--module--cloud routing--openfeign
-2. @EnableFeignClients 和 @FeignCleint
-3. 访问：http://127.0.0.1:8887/feign/name 效果同ribbon
+
 
 ```
 
