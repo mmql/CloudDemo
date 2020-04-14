@@ -10,10 +10,11 @@
     <name>clouddemo</name>
 
     <modules>
-        <!--<module>demo-server</module>-->
-        <!--<module>service-A1</module>-->
-        <!--<module>service-A2</module>-->
-        <!--<module>client</module>-->
+        <module>eureka-server</module>
+        <module>service-A1</module>
+        <module>service-A2</module>
+        <module>client-ribbon</module>
+        <module>client-feign</module>
 
     </modules>
 

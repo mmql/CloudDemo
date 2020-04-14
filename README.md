@@ -18,16 +18,23 @@ packing默认是jar类型
 
 ## 子工程
 
-### 搭建注册中心 eureka-server
+### eureka-server
+
+- 服务注册中心
+
 
 ```
+- module:eureka-server
+
 1. 新建选择 spring Initializr--module--cloud discovery--eureka sever
 2. 项目启动，访问 http://127.0.0.1:10086/，可查看注册服务
 
 ```
 
 ### eureka-client 
+
 - [注册中心](imgs/eureka.jpeg)注册服务示例图
+
 ```
 1. 勾选 spring Initializr--module--cloud discovery--eureka discovery client   使该服务 参与注册中心注册
 2. 这里搭了三个eureka-client
@@ -38,8 +45,10 @@ packing默认是jar类型
 ```
 
 ### ribbon
-- [serviceA1](imgs/service-A1.png)负载均衡到service-A1示例图
-- [serviceA2](imgs/service-A2.png)负载均衡到service-A2示例图
+
+- 负载均衡
+- 负载均衡到[serviceA1](imgs/service-A1.png)示例图
+- 负载均衡到[serviceA2](imgs/service-A2.png)示例图
 
 ```
 1. 新建选择 spring Initializr--module--cloud routing--ribbon
@@ -52,9 +61,51 @@ packing默认是jar类型
 
 ### feign
 
+- 声明式服务调用
+
 ```
 1. 新建选择 spring Initializr--module--cloud routing--openfeign
 2. @EnableFeignClients 和 @FeignCleint
 3. 访问：http://127.0.0.1:8887/feign/name 效果同ribbon
 
 ```
+
+### hystrix
+
+- 服务容错保护
+
+```
+
+
+```
+
+### zuul
+
+- api网关服务 过滤:安全、监控、限流、路由
+
+```
+1. 新建选择 spring Initializr--module--cloud routing--openfeign
+2. @EnableFeignClients 和 @FeignCleint
+3. 访问：http://127.0.0.1:8887/feign/name 效果同ribbon
+
+```
+
+### config
+
+- 分布式配置中心
+
+### bus
+
+- 消息总线
+
+### stream
+
+- 消息驱动微服务
+
+### sleuth
+
+- 分布式服务跟踪
+
+### shiro
+
+- 安全权限控制
