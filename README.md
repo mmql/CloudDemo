@@ -83,7 +83,7 @@ packing默认是jar类型
 4. 然后再把服务提供者启动 调用
 
 ```
-- dashboard [示例](imgs/dashboard.png)
+- dashboard [示例](imgs/dashboard.jpeg)
 
 ```
 1. 访问http://localhost:8880/hystrix 可以查看Dashboard
@@ -96,9 +96,11 @@ packing默认是jar类型
 ### zuul
 
 - api网关服务 过滤:安全、监控、限流、路由
+- [示例](imgs/zuul.jpeg)
 
 ```
-
+1. http://localhost:8889/zuul-url/hystrix/name 
+2.
 
 ```
 
