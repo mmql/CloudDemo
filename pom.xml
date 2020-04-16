@@ -18,6 +18,7 @@
         <module>hystrix-client-ribbon</module>
         <module>hystrix-client-feign</module>
         <module>hystrix-dashboard</module>
+        <module>zuul</module>
 
     </modules>
 
